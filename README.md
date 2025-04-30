@@ -41,7 +41,9 @@ The study utilizes the Duke OCT dataset, comprising 220 retinal OCT images and t
 ## Model Architecture
 
 The core of the framework is a SegNet-based Convolutional Neural Network (CNN) with an encoder-decoder structure.
+
 ![arch](https://github.com/user-attachments/assets/7fb8f252-21c6-4641-98ba-69d4f4196ee0)
+
 - **Encoder**: Consists of convolutional and max-pooling layers for feature extraction. Pooling indices are stored for use in the decoder.
 - **Decoder**: Uses transposed convolutional layers and stored pooling indices for upsampling and reconstructing the segmentation mask. Skip connections are incorporated for better spatial detail preservation.
 
@@ -119,7 +121,6 @@ pip install tensorflow keras opencv-python numpy matplotlib scikit-learn
 3. Place your dataset (images and masks in .npy format as indicated in the PDF) in the appropriate directory.
 4. Run the main script (e.g., `train.py` or a Jupyter notebook) to perform data loading, preprocessing, model training, evaluation, and Grad-CAM visualization.
 
-(Replace with specific instructions based on your actual code structure)
 
 ## Authors
 
