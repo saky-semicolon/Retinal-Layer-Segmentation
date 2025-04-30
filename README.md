@@ -1,6 +1,7 @@
 # Enhanced SegNet with Integrated Grad-CAM for Interpretable Retinal Layer Segmentation in OCT Images
 
 This repository contains the implementation of an enhanced SegNet-based deep learning framework for automated and interpretable retinal layer segmentation in Optical Coherence Tomography (OCT) images. The project integrates Gradient-weighted Class Activation Mapping (Grad-CAM) to provide visual explanations for the segmentation results, enhancing clinical trust.
+![arch](https://github.com/user-attachments/assets/7fb8f252-21c6-4641-98ba-69d4f4196ee0)
 
 ## Project Overview
 
