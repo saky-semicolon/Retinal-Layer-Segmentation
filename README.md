@@ -1,7 +1,8 @@
 # Enhanced SegNet with Integrated Grad-CAM for Interpretable Retinal Layer Segmentation in OCT Images
 
 This repository contains the implementation of an enhanced SegNet-based deep learning framework for automated and interpretable retinal layer segmentation in Optical Coherence Tomography (OCT) images. The project integrates Gradient-weighted Class Activation Mapping (Grad-CAM) to provide visual explanations for the segmentation results, enhancing clinical trust.
-![arch](https://github.com/user-attachments/assets/7fb8f252-21c6-4641-98ba-69d4f4196ee0)
+![vr](https://github.com/user-attachments/assets/e6044f21-da37-4c44-b363-83be2b0c481e)
+
 
 ## Project Overview
 
@@ -23,6 +24,7 @@ Accurate segmentation of retinal layers in OCT images is crucial for diagnosing 
 - **Explainable AI (XAI) - Grad-CAM Integration**: Explanation of how Grad-CAM is used to provide visual interpretability of the model's segmentation decisions.
 
 ## Dataset
+![data](https://github.com/user-attachments/assets/97ed31d9-6bd0-4e51-a817-97b240bf1e98)
 
 The study utilizes the Duke OCT dataset, comprising 220 retinal OCT images and their corresponding 8-class segmentation masks.
 
@@ -39,7 +41,7 @@ The study utilizes the Duke OCT dataset, comprising 220 retinal OCT images and t
 ## Model Architecture
 
 The core of the framework is a SegNet-based Convolutional Neural Network (CNN) with an encoder-decoder structure.
-
+![arch](https://github.com/user-attachments/assets/7fb8f252-21c6-4641-98ba-69d4f4196ee0)
 - **Encoder**: Consists of convolutional and max-pooling layers for feature extraction. Pooling indices are stored for use in the decoder.
 - **Decoder**: Uses transposed convolutional layers and stored pooling indices for upsampling and reconstructing the segmentation mask. Skip connections are incorporated for better spatial detail preservation.
 
@@ -82,6 +84,8 @@ The model demonstrated strong performance on the validation set:
 - **Validation Dice Coefficient**: 0.9446
 - **Validation Jaccard Index (IoU)**: 0.8951
 - **Validation Loss**: 0.1354
+![train](https://github.com/user-attachments/assets/5618711e-3715-4025-9f44-a7aaa88f32aa)
+
 
 Visual inspection of predicted masks showed good alignment with ground truth, although challenges were noted in segmenting thin or complex layers (specifically Classes 3 and 4), which exhibited lower IoU scores (0.71 and 0.68 respectively).
 
@@ -89,12 +93,8 @@ Visual inspection of predicted masks showed good alignment with ground truth, al
 
 Grad-CAM was integrated to provide visual explanations for the model's predictions. By generating class-specific heatmaps, Grad-CAM highlights the regions in the OCT image that most influenced the segmentation decision for each retinal layer. This enhances transparency and helps clinicians validate the model's reasoning. Analysis of heatmaps from different layers (e.g., Conv2d_19 and Conv2d_20) provided insights into the hierarchical feature learning process.
 
-## Novelty and Contributions
+![xai](https://github.com/user-attachments/assets/1c829500-8ae0-49bc-9237-60c9541e65c1)
 
-- Enhanced SegNet architecture with skip connections and optimized filter depth for retinal layer segmentation.
-- Implementation of a hybrid loss function tailored for multi-class segmentation with class imbalance.
-- Integration and analysis of multi-class Grad-CAM for interpreting segmentation decisions in OCT images.
-- Comprehensive evaluation including class-wise analysis to identify segmentation challenges.
 
 ## Dependencies
 
