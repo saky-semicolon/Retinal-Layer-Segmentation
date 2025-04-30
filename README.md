@@ -127,6 +127,4 @@ pip install tensorflow keras opencv-python numpy matplotlib scikit-learn
 
 **Affiliation**: Albukhary International University, Malaysia
 
-## License
-
-(Add your chosen license here, e.g., MIT, Apache 2.0)
+## Visit Here- https://retina-seg.netlify.app/
