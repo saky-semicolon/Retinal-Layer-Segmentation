@@ -122,11 +122,20 @@ pip install tensorflow keras opencv-python numpy matplotlib scikit-learn
 4. Run the main script (e.g., `train.py` or a Jupyter notebook) to perform data loading, preprocessing, model training, evaluation, and Grad-CAM visualization.
 
 
-## Authors
+## Cite this work
 
-- **S M Asiful Islam Saky** (Corresponding Author)
-- **Ugyen Tshering**
+If this work has helped you, please cite it as:
 
-**Affiliation**: Albukhary International University, Malaysia
+```bibtex
+@misc{saky2025enhancedsegnetintegratedgradcam,
+  title        = {Enhanced SegNet with Integrated Grad-CAM for Interpretable Retinal Layer Segmentation in OCT Images},
+  author       = {S M Asiful Islam Saky and Ugyen Tshering},
+  year         = {2025},
+  eprint       = {2509.07795},
+  archivePrefix= {arXiv},
+  primaryClass = {eess.IV},
+  url          = {https://arxiv.org/abs/2509.07795}
+}
+```
 
 ## Visit Here- https://retina-seg.netlify.app/
